@@ -27,7 +27,7 @@ $(document).ready(function () {
                             <h3>${name}</h3>
                             <p>ID: ${id}</p>
                             <p>Type: ${type}</p>
-                           
+
                             <img src="${imageUrl}" alt="${name}">
                         </div>
                     `;
@@ -71,11 +71,6 @@ $(document).ready(function () {
                 $("#pokemonInfo").html(mensageErro);
             });
     }
- 
-    $("#searchButton").click(function () {
-        const procurar = $("#input").val();
-        ProcurarPoke(procurar);
-    });
  
     $("#input").keypress(function (e) {
         if (e.key === "Enter") {
